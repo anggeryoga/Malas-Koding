@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="header">
+      <img src="img/logo.png" alt="Logo" class="logo">
+      <h2>No Coding, Mending Mewing</h2>
+      <button id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    
+    <div class="content">
+      <div class="quick-actions">
+        <button id="addToFavorites" class="quick-action-btn" title="Tambah ke Favorit">
+          <i class="fas fa-star"></i>
+        </button>
+        <button id="shareUrl" class="quick-action-btn" title="Bagikan">
+          <i class="fas fa-share-alt"></i>
+        </button>
+        <button id="copyUrl" class="quick-action-btn" title="Salin URL">
+          <i class="fas fa-copy"></i>
+        </button>
+      </div>
+
+      <div class="shortcut-info">
+        <div class="shortcut-box">
+          <i class="fas fa-keyboard"></i>
+          <span>CTRL + X</span>
+        </div>
+        <div class="shortcut-status" id="shortcutStatus">
+          <span class="status-dot"></span>
+          <span class="status-text">Aktif</span>
+        </div>
+      </div>
+
+      <div class="url-section">
+        <div class="url-preview">
+          <i class="fas fa-link"></i>
+          <span id="currentUrl">Loading...</span>
+        </div>
+        <div class="url-favorites" id="urlFavorites">
+          <!-- Favorites will be loaded here -->
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="launchButton" class="button primary">
+          <i class="fas fa-external-link-alt"></i>
+          Buka Situs
+        </button>
+        <button id="editButton" class="button secondary">
+          <i class="fas fa-cog"></i>
+          Edit URL
+        </button>
+      </div>
+    </div>
+
+    <div class="stats-section">
+      <div class="stat-item">
+        <i class="fas fa-clock"></i>
+        <span id="lastUsed">Terakhir: Baru saja</span>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-mouse-pointer"></i>
+        <span id="clickCount">Klik: 0</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="version">v1.0</span>
+      <button id="helpButton" class="help-button">
+        <i class="fas fa-question-circle"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Help Modal -->
+  <div id="helpModal" class="modal">
+    <div class="modal-content">
+      <h3>Bantuan</h3>
+      <ul class="help-list">
+        <li><i class="fas fa-keyboard"></i> Gunakan CTRL + X untuk membuka situs</li>
+        <li><i class="fas fa-star"></i> Tambahkan ke favorit untuk akses cepat</li>
+        <li><i class="fas fa-share-alt"></i> Bagikan URL dengan teman</li>
+        <li><i class="fas fa-moon"></i> Ubah tema gelap/terang</li>
+      </ul>
+      <button id="closeHelp" class="button secondary">Tutup</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

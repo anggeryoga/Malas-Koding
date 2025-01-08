@@ -1,0 +1,481 @@
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary-color: #e2e8f0;
+    --text-color: #1e293b;
+    --border-color: #e2e8f0;
+    --success-color: #22c55e;
+    --background-color: #ffffff;
+    --accent-color: #3b82f6;
+  }
+  
+  /* Reset & Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--text-color);
+  }
+  
+  /* Container Styles */
+  .popup-container {
+    width: 350px;
+    background: var(--background-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styles */
+  .header {
+    background: var(--primary-color);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .icon-accent {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: auto;
+    font-size: 16px;
+  }
+  
+  /* Content Area */
+  .content {
+    padding: 20px;
+  }
+  
+  /* Quick Actions */
+  .quick-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .quick-action-btn {
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .quick-action-btn:hover {
+    background: #cbd5e1;
+    transform: translateY(-2px);
+  }
+  
+  /* Shortcut Info */
+  .shortcut-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .shortcut-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .shortcut-box i {
+    color: var(--primary-color);
+  }
+  
+  .shortcut-box span {
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .shortcut-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--success-color);
+    border-radius: 50%;
+  }
+  
+  .status-text {
+    font-size: 14px;
+    color: var(--success-color);
+  }
+  
+  /* URL Section */
+  .url-section {
+    margin-bottom: 16px;
+  }
+  
+  .url-preview {
+    background: #f8fafc;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .url-preview i {
+    color: var(--primary-color);
+  }
+  
+  .url-favorites {
+    margin-top: 8px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+  
+  .favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background: var(--secondary-color);
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .favorite-url {
+    font-size: 12px;
+    color: var(--text-color);
+  }
+  
+  .remove-favorite {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    padding: 2px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .button.primary {
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  .button.primary:hover {
+    background: var(--primary-hover);
+  }
+  
+  .button.secondary {
+    background: var(--secondary-color);
+    color: var(--text-color);
+  }
+  
+  .button.secondary:hover {
+    background: #cbd5e1;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    padding: 12px 20px;
+    background: #f8fafc;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #64748b;
+  }
+  
+  /* Footer */
+  .footer {
+    border-top: 1px solid var(--border-color);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .version {
+    font-size: 12px;
+    color: #64748b;
+  }
+  
+  .help-button {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    padding: 4px;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .help-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+  }
+  
+  .help-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    color: var(--text-color);
+  }
+  
+  .help-list li i {
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+  }
+  
+  /* Toast Notifications */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+  
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  /* Options Page Styles */
+  .options-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options-container h2 {
+    color: var(--text-color);
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 24px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background: #1e293b;
+    color: #f1f5f9;
+  }
+  
+  .dark-mode .popup-container {
+    background: #0f172a;
+  }
+  
+  .dark-mode .shortcut-info,
+  .dark-mode .url-preview {
+    background: #1e293b;
+    color: #f1f5f9;
+  }
+  
+  .dark-mode .favorite-item {
+    background: #1e293b;
+  }
+  
+  .dark-mode .favorite-url {
+    color: #f1f5f9;
+  }
+  
+  .dark-mode .stats-section {
+    background: #1e293b;
+    border-color: #334155;
+  }
+  
+  .dark-mode .button.secondary {
+    background: #334155;
+    color: #f1f5f9;
+  }
+  
+  .dark-mode .button.secondary:hover {
+    background: #475569;
+  }
+  
+  .dark-mode .quick-action-btn {
+    background: #334155;
+    color: #f1f5f9;
+  }
+  
+  .dark-mode .quick-action-btn:hover {
+    background: #475569;
+  }
+  
+  .dark-mode .modal-content {
+    background: #1e293b;
+    color: #f1f5f9;
+  }
+  
+  .dark-mode .input {
+    background: #334155;
+    border-color: #475569;
+    color: #f1f5f9;
+  }
+  
+  .dark-mode .input:focus {
+    border-color: var(--primary-color);
+  }
+  
+  .dark-mode .help-list li {
+    color: #f1f5f9;
+  }
+  
+  .dark-mode .footer {
+    border-color: #334155;
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+  }
+  
+  .dark-mode ::-webkit-scrollbar-thumb {
+    background: #475569;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.3s ease;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 400px) {
+    .popup-container {
+      width: 100%;
+    }
+    
+    .modal-content {
+      width: 90%;
+      margin: 10% auto;
+    }
+  }

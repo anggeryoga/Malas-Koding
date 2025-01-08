@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body style="background: #f1f5f9;">
+  <div class="options-container">
+    <h2><i class="fas fa-cog"></i> Pengaturan URL</h2>
+    <div class="form-group">
+      <label for="siteUrl">URL Situs:</label>
+      <input type="url" id="siteUrl" class="input" placeholder="https://example.com">
+    </div>
+    <button id="saveButton" class="button primary">
+      <i class="fas fa-save"></i>
+      Simpan Pengaturan
+    </button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

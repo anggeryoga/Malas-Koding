@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "No Coding, Mending Mewing",
+    "version": "1.0",
+    "description": "Buka situs favorit Anda dengan cepat menggunakan shortcut",
+    "permissions": [
+      "storage",
+      "tabs",
+      "commands",
+      "bookmarks"
+    ],
+    "icons": {
+      "48": "img/logo.png",
+      "128": "img/logo.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "img/logo.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "options_page": "options.html",
+    "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Ctrl+X"
+        },
+        "description": "Buka situs yang telah diatur"
+      }
+    }
+  }
