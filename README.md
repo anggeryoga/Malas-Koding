@@ -10,7 +10,7 @@
 ## Cara Penggunaan
 
 ### 1. Menginstal Ekstensi
-- Kunjungi [Jangan Ngoding Mending Mewing di Chrome Web Store](#link-ke-chrome-web-store).
+- Kunjungi [Jangan Ngoding Mending Mewing di sini](https://siin.lol/malesngoding.html).
 - Klik tombol **"Add to Chrome"**.
 - Setelah pemasangan selesai, ikon ekstensi akan muncul di bilah alat Chrome Anda.
 
@@ -27,7 +27,7 @@
 
 Jika Anda ingin menginstal ekstensi secara lokal:
 
-1. **Unduh file ekstensi**: [Download ZIP file ekstensi](#link-to-zip).
+1. **Unduh file ekstensi**: [Download ZIP file ekstensi](https://github.com/anggeryoga/Malas-Koding/archive/refs/heads/main.zip).
 2. Ekstrak file ZIP ekstensi.
 3. Buka **chrome://extensions** di browser Chrome Anda.
 4. Aktifkan **Developer mode** di kanan atas.
@@ -54,4 +54,3 @@ Ekstensi ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) u
 ![Screenshot Ekstensi](screenshot.png)
 
 Jika Anda menggunakan GitHub untuk repositori ini, Anda dapat menambahkan gambar screenshot ekstensi untuk memberikan pengguna gambaran tentang tampilannya. Anda bisa menambahkan gambar menggunakan sintaks ini: `![alt-text](link-to-image)`.
-
